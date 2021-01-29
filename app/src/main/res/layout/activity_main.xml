@@ -17,12 +17,12 @@
         android:gravity="center">
 
         <TextView
+            android:id="@+id/textViewAnswer"
             android:layout_width="380dp"
             android:layout_height="wrap_content"
             android:gravity="right"
             android:text="0"
             android:textColor="@color/white"
-            android:textSelectHandleLeft="0"
             android:textSize="50sp" />
     </LinearLayout>
 
@@ -40,6 +40,7 @@
             android:gravity="center">
 
             <Button
+                android:id="@+id/buttonC"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_margin="7dp"
@@ -50,6 +51,7 @@
                 app:backgroundTint="@color/cardview_dark_background" />
 
             <Button
+                android:id="@+id/buttonMC"
                 android:text="MC"
                 android:textSize="25dp"
                 android:layout_width="0dp"
@@ -60,6 +62,7 @@
 
                 app:backgroundTint="@color/cardview_dark_background" />
             <Button
+                android:id="@+id/buttonMR"
                 android:text="MR"
                 android:textSize="25dp"
                 android:layout_width="0dp"
@@ -69,6 +72,7 @@
                 android:gravity="center"
                 app:backgroundTint="@color/cardview_dark_background"/>
             <Button
+                android:id="@+id/buttonMPlus"
                 android:text="M+"
                 android:textSize="25dp"
                 android:layout_width="0dp"
@@ -88,57 +92,50 @@
             android:gravity="center"
             >
 
-            <Button
+            <ImageView
+                android:id="@+id/buttonBackSpace"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_margin="7dp"
                 android:layout_weight="1"
-                android:drawableLeft="@drawable/backspace_white"
-                android:drawablePadding="2dip"
+                android:src="@drawable/backspace_white48"
                 android:gravity="center"
                 android:paddingLeft="33dip"
                 android:paddingRight="26dip"
                 android:singleLine="true"
-                app:backgroundTint="@color/cardview_dark_background"/>
+                android:background="@color/cardview_dark_background"/>
 
             <Button
+                android:id="@+id/buttonPlusMinus"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_margin="7dp"
                 android:layout_weight="1"
-                android:drawableLeft="@drawable/plus_minus_white"
-                android:drawablePadding="2dip"
                 android:gravity="center"
-                android:paddingLeft="33dip"
-                android:paddingRight="26dip"
-                android:singleLine="true"
+                android:text="±"
+                android:textSize="25dp"
                 app:backgroundTint="@color/cardview_dark_background" />
 
             <Button
+                android:id="@+id/buttonPercentage"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_margin="7dp"
                 android:layout_weight="1"
-                android:drawableLeft="@drawable/percentage_white"
-                android:drawablePadding="2dip"
-                android:paddingLeft="33dip"
-                android:paddingRight="26dip"
-                android:singleLine="true"
                 android:gravity="center"
+                android:text="%"
+                android:textSize="25dp"
                 app:backgroundTint="@color/cardview_dark_background"/>
 
             <Button
+                android:id="@+id/buttonDivide"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_margin="7dp"
                 android:layout_weight="1"
-                android:drawableLeft="@drawable/divide_white"
-                android:drawablePadding="2dip"
                 android:gravity="center"
-                android:paddingLeft="33dip"
-                android:paddingRight="26dip"
-                android:singleLine="true"
-                android:src="@drawable/divide_white"
+                android:text="÷"
+                android:textSize="25dp"
                 app:backgroundTint="@color/cardview_dark_background" />
 
         </LinearLayout>
@@ -151,6 +148,7 @@
             android:gravity="center">
 
             <Button
+                android:id="@+id/button7"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_margin="7dp"
@@ -161,6 +159,7 @@
                 app:backgroundTint="#191919" />
 
             <Button
+                android:id="@+id/button8"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_margin="7dp"
@@ -171,6 +170,7 @@
                 app:backgroundTint="#191919" />
 
             <Button
+                android:id="@+id/button9"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_margin="7dp"
@@ -180,16 +180,14 @@
                 android:textSize="25dp"
                 app:backgroundTint="#191919" />
             <Button
+                android:id="@+id/buttonMultiple"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_margin="7dp"
                 android:layout_weight="1"
-                android:drawableLeft="@drawable/multiply_white"
-                android:drawablePadding="2dip"
                 android:gravity="center"
-                android:paddingLeft="33dip"
-                android:paddingRight="26dip"
-                android:singleLine="true"
+                android:text="×"
+                android:textSize="25dp"
                 app:backgroundTint="@color/cardview_dark_background" />
         </LinearLayout>
 
@@ -201,6 +199,7 @@
             android:gravity="center">
 
             <Button
+                android:id="@+id/button4"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_margin="7dp"
@@ -211,6 +210,7 @@
                 app:backgroundTint="#191919" />
 
             <Button
+                android:id="@+id/button5"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_margin="7dp"
@@ -221,6 +221,7 @@
                 app:backgroundTint="#191919" />
 
             <Button
+                android:id="@+id/button6"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_margin="7dp"
@@ -230,16 +231,14 @@
                 android:textSize="25dp"
                 app:backgroundTint="#191919" />
             <Button
+                android:id="@+id/buttonMinus"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_margin="7dp"
                 android:layout_weight="1"
-                android:drawableLeft="@drawable/minus_white"
-                android:drawablePadding="2dip"
                 android:gravity="center"
-                android:paddingLeft="33dip"
-                android:paddingRight="26dip"
-                android:singleLine="true"
+                android:text="―"
+                android:textSize="25dp"
                 app:backgroundTint="@color/cardview_dark_background" />
 
         </LinearLayout>
@@ -252,6 +251,7 @@
             android:gravity="center">
 
             <Button
+                android:id="@+id/button1"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_margin="7dp"
@@ -262,6 +262,7 @@
                 app:backgroundTint="#191919" />
 
             <Button
+                android:id="@+id/button2"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_margin="7dp"
@@ -272,6 +273,7 @@
                 app:backgroundTint="#191919" />
 
             <Button
+                android:id="@+id/button3"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_margin="7dp"
@@ -281,16 +283,14 @@
                 android:textSize="25dp"
                 app:backgroundTint="#191919" />
             <Button
+                android:id="@+id/buttonPlus"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_margin="7dp"
                 android:layout_weight="1"
-                android:drawableLeft="@drawable/plus_white"
-                android:drawablePadding="2dip"
                 android:gravity="center"
-                android:paddingLeft="33dip"
-                android:paddingRight="26dip"
-                android:singleLine="true"
+                android:text="＋"
+                android:textSize="25dp"
                 app:backgroundTint="@color/cardview_dark_background" />
         </LinearLayout>
 
@@ -303,6 +303,7 @@
 
 
             <Button
+                android:id="@+id/button0"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_margin="7dp"
@@ -313,6 +314,7 @@
                 app:backgroundTint="#191919" />
 
             <Button
+                android:id="@+id/buttonPoint"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_margin="7dp"
@@ -323,17 +325,14 @@
                 app:backgroundTint="#191919" />
 
             <Button
+                android:id="@+id/buttonResult"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_margin="7dp"
                 android:layout_weight="1"
-
-                android:drawableLeft="@drawable/equal_white"
-                android:drawablePadding="2dip"
+                android:text="="
+                android:textSize="25dp"
                 android:gravity="center"
-                android:paddingLeft="33dip"
-                android:paddingRight="26dip"
-                android:singleLine="true"
                 app:backgroundTint="#CA913E"
                 app:rippleColor="#FF9800" />
 

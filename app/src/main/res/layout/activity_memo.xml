@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MemoActivity">
+
+    <TextView
+        android:background="#1C4A5B"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:text="Memo Activity"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <EditText
+            android:id="@+id/edit_title"
+            android:background="@drawable/layout_memo_edit_title"
+            android:hint="제목을 입력해주세요"
+            android:textColorHint="#73173948"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"/>
+        <EditText
+            android:id="@+id/edit_content"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="1"
+            android:background="@drawable/layout_memo_edit_content"
+            android:gravity="top|left"
+            android:hint="본문을 입력하세요"
+            android:padding="16dp"/>
+        <TextView
+            android:id="@+id/button_memo"
+            android:text="저장"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:background="@drawable/layout_memo_edit_button"
+            android:layout_width="match_parent"
+            android:layout_height="56sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
