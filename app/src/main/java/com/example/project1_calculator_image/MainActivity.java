@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     enum Page{
-        TAMAGO, MEMO
+        TAMAGO, MEMO, RECYCLE
     }
 
     double num1;
@@ -112,7 +112,13 @@ public class MainActivity extends AppCompatActivity {
                 e.printStackTrace();
             }
         });
-        buttonMPlus.setOnClickListener(view -> {});
+        buttonMPlus.setOnClickListener(view -> {
+            try {
+                goToPage(Page.RECYCLE);
+            } catch (IllegalAccessException e) {
+                e.printStackTrace();
+            }
+        });
         buttonBackSpace.setOnClickListener(view -> {backSpace();});
         buttonPlusMinus.setOnClickListener(view -> {PlusMinus();});
         buttonPercentage.setOnClickListener(view -> {percentage();});
@@ -136,6 +142,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case MEMO:
                 intent = new Intent(getApplicationContext(), MemoActivity.class);
+                break;
+            case RECYCLE:
+                intent = new Intent(getApplicationContext(), RecycleActivity.class);
                 break;
             default:
                 throw new IllegalAccessException("Unexpected value: " + page);
